@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textviewdanhssachindex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="#121111"
+            />
+
+        <TextView
+            android:id="@+id/textviewtenbaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/textviewdanhssachindex"
+            android:ellipsize="end"
+            android:maxWidth="250dp"
+            android:singleLine="true"
+            android:text="Tên Ca Khúc"
+            android:textSize="20sp"
+            android:textColor="#030303" />
+
+        <TextView
+            android:id="@+id/textviewtencasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textviewtenbaihat"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/textviewdanhssachindex"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Ca sĩ"
+            android:textColor="#121111"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageviewluotthichdanhsachbaihat"
+            android:src="@drawable/iconlove"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
